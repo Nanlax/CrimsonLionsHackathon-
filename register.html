@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up page</title>
+    <link rel="stylesheet" href="register1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Team Registration</h1>
+      <form class="form">
+        <div class="form first">
+          <div class="details personal">
+            <span class="title">Personal details</span>
+            <div class="fields">
+              <div class="input-field">
+                <input name="team_name" type="text" placeholder="Team-name" />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_1_name"
+                  type="text"
+                  placeholder="Team Member 1 Name"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_1_department"
+                  type="text"
+                  placeholder="Team Member 1 Dept"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_1_phone"
+                  type="text"
+                  placeholder="Team Member 1 Phoneno"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_1_email"
+                  type="email"
+                  placeholder="Team Member 1 Email"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_1_register_number"
+                  type="text"
+                  placeholder="Team Member 1 RegisterNo"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_2_name"
+                  type="text"
+                  placeholder="Team Member 2 Name"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_2_department"
+                  type="text"
+                  placeholder="Team Member 2 Dept"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_2_phone"
+                  type="text"
+                  placeholder="Team Member 2 Phoneno"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_2_email"
+                  type="email"
+                  placeholder="Team Member 2 Email"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_2_register_number"
+                  type="text"
+                  placeholder="Team Member 2 RegisterNo"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_3_name"
+                  type="text"
+                  placeholder="Team Member 3 Name"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_3_department"
+                  type="text"
+                  placeholder="Team Member 3 Dept"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_3_phone"
+                  type="text"
+                  placeholder="Team Member 3 Phoneno"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_3_email"
+                  type="email"
+                  placeholder="Team Member 3 Email"
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  name="team_member_3_register_number"
+                  type="text"
+                  placeholder="Team Member 3 RegisterNo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" href="E:HACKATHON\index.html">Submit</button>
+      </form>
+    </div>
+    <script>
+      const formE1 = document.querySelector(".form");
+      formE1.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(formE1);
+        const data = Object.fromEntries(formData);
+        fetch("https://web-it-like-spider.onrender.com/hackathon/register/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((res) => res.json())
+          .then((data) => alert(data.success))
+          .catch((error) => console.log(error));
+      });
+    </script>
+  </body>
+</html>

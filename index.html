@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>TCEHackathon</title>
+</head>
+<body>
+    <!--HEADER AND NAVIGATION BAR-->
+    <header class = "header blur-header" id = "header">
+       <nav class="nav container">
+        <a href="#" class="nav__logo" style = "color: black">
+            TCEHackathon
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link" style = "color: black">Home</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#about" class="nav__link" style = "color: black">About</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#domain" class="nav__link" style = "color: black">Domain</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#faq" class="nav__link" style = "color: black">FAQ</a>
+                </li>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line" style = "color: black"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-3-fill" style = "color: black"></i>
+            </div>
+        </div>
+       </nav>
+    </header>
+
+    <main class = "main" >
+         <section class="home section" id="home">
+             <img src="i6.png" alt="home picture" class="home__pic">
+             <div class="home__shadow">
+
+             </div>
+
+             <div class = "home__container container grid">
+                <div class = "home__data">
+                    <h3 class="home__subtitle" style = "color: black">IE Student Chapter & CSI Association Presents</h3>
+                    <h1 class="home__title" style = "color: black">TCE HACKATHON</h1>
+                    <p class="home__description" style = "color: black">
+                        Prizes worth ₹ 100,000+ <br>
+                        Fulltime and internship opportunities at Qualcomm and BharatX
+                    </p>
+                    <a href="register.html" class="button" style = "color: black">
+                        Register Now
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+             </div>
+         </section>
+
+         <section class="about section" id="about">
+               <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">
+                        About TCE
+                    </h2>
+                    <div class="about__pic">
+                    <img src="i8.png" alt="aboutTCE pic" class="about__tce-pic" height="200px", width="200px">
+                    </div>
+                    <p class="about__description">
+                        Founded in 1957 by philanthropist and industrialist Late Shri.Karumuttu Thiagarajan Chettiar, Thiagarajar College of Engineering (TCE) is a Government Aided Institution and affiliated to Anna University and situated in Madurai, the Temple City .The college is funded by Central and State Governments and Management. The courses offered in TCE are approved by the All India Council for Technical Education (AICTE), New Delhi and Council of Architecture (COA), New Delhi. TCE was granted Autonomy in the year 1987 and the programmes have been accredited by the National Board of Accreditation (NBA). TCE offers 9 Undergraduate programmes, 10 Postgraduate programmes and Doctoral programmes in Engineering, Architecture and Science.
+                    </p>
+                </div>
+
+                <div class="about__data">
+                    <h2 class="section__title">
+                        About Hackathon
+                    </h2>
+                    
+                    <p class="about__description">
+                      <h2>Welcome to This <span id="eventName">Hackathon Contest</span></h2>
+                        TCEHackathon gives you the platform to showcase your innovation capabilities - to find new, creative solutions to existing problems. We have a great experience lined up for you budding developers - apart from the fantastic prizes. Prove your prowess in ML, Web Dev, Blockchain or Digital Electronics and solve real-world problems in the fields of Education, Healthcare, Finance and more. Check out the tracks tab for more details.
+                        <br>
+                        <br>
+                        We are excited to announce that this year's theme will be Sustainability. The problem statements in all the tracks will be based on it. Sustainability as a theme was chosen because it will encourage participants to develop technologies to create a sustainable economic, environmental, and social future.
+                    </p> 
+                    <br>
+                   <h3>The TCEHackathon starts on <span id="eventStartDate">2023-08-26</span> and ends on <span id="eventEndDate">2023-08-26</span></h3>
+                   <h3>The Registration for TCEHackathon starts on <span id="registrationStartDate">2023-08-26</span> and ends on <span id="registrationEndDate">2023-08-26</span></h3>
+
+                   <h2>Rounds</h2>
+                   <ul id="roundsList"></ul>
+
+                   <h2>Announcements</h2>
+                   <ul id="announcementsList"></ul>
+                </div>
+               </div>
+         </section>
+
+         <section class="domain section" id="domain">
+            <div class="domain__cards grids">
+                <h2 class="domain__title">
+                    Domains
+                </h2>
+                <article class="domain__card">
+                    <img src="i2.png" alt="domain image" class = "domain__card-pic pic">
+                    <h3 class="domain__card-title">Climatic Change</h3>
+                    <div class="domain__card-shadow"></div>
+                </article>
+
+                <article class="domain__card">
+                    <img src="i7.png" alt="domain image" class = "domain__card-pic pic">
+                    <h3 class="domain__card-title">Education & Oppurtunities</h3>
+                    <div class="domain__card-shadow"></div>
+                </article>
+
+                <article class="domain__card">
+                    <img src="i4.png" alt="domain image" class = "domain__card-pic pic">
+                    <h3 class="domain__card-title">Economic Growth & Development</h3>
+                    <div class="domain__card-shadow"></div>
+                </article>
+            </div>
+         </section>
+
+         <section class = "timeline section" id = "timeline">
+            <h2 class="domain__title">
+                Events
+            </h2>
+            <div class="wrapper">
+                <div class="center-line">
+                  <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+                </div>
+                <div class="row row-1">
+                  <section>
+                    <i class="icon fas fa-home"></i>
+                    <div class="details">
+                      <span style="color: #333" class="title">Announcement of Hackathon</span>
+                      <span style="color: #333">02 Jul 2023</span>
+                    </div>
+                    <p style="color: #333">The hackathon will be a 2-month event where you have the chance to participate in a project proposed by one of your colleagues or by yourself.</p>
+                  </section>
+                </div>
+                <div class="row row-2">
+                  <section>
+                    <i class="icon fas fa-star"></i>
+                    <div class="details">
+                      <span style="color: #333" class="title">Regional Rounds</span>
+                      <span style="color: #333">28 Aug 2023</span>
+                    </div>
+                    <p style="color: #333">The regional round for the hackathon will occur on TCE on the announced dates.</p>
+                  </section>
+                </div>
+                <div class="row row-1">
+                  <section>
+                    <i class="icon fas fa-rocket"></i>
+                    <div class="details">
+                      <span class="title" style="color: #333">Final Round</span>
+                      <span style="color: #333">08 Sep 2023</span>
+                    </div>
+                    <p style="color: #333">A 2-day offline event in TCE from the selected teams from the regional rounds.</p>
+                  </section>
+                </div>
+                <div class="row row-2">
+                  <section>
+                    <i class="icon fas fa-globe"></i>
+                    <div class="details">
+                      <span style="color: #333" class="title">Prize Announcement</span>
+                      <span style="color: #333">08 Sep 2023</span>
+                    </div>
+                    <p style="color: #333">Cash Prize of worth Rs.1,00,000+ will be awarded for the first prize and rewards for first 3 positions and participation certificates for all the teams.</p>
+                  </section>
+                </div>
+              </div>
+         </section>
+
+         <section class="faq section" id="faq">
+            <h2 class="domain__title">
+                Frequently Asked Questions
+            </h2>
+
+            <div class="faq-container">
+               
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <a>Who can participate?</a>
+                    <div class="content">
+                      <p>TCEHackathon is open to all undergraduate students of TCE.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <a>How much is the participation fee?</a>
+                    <div class="content">
+                      <p>Participation is absolutely free inclusive of resources.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <a>Will the hackathon be in person or online?</a>
+                    <div class="content">
+                      <p>This year the TCEhackathon will be conducted in complete offline mode.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <a>What are the prerequisites?</a>
+                    <div class="content">
+                      <p>No prerequisites are needed. Even a novice can excel in this event.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <a>What is the team size?</a>
+                    <div class="content">
+                      <p>You can participate individually or in teams of 2 or 3. If you are participating in the hackathon individually and looking for a team, we will help you in connecting to other individual participants to get you a team.</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+         </section>
+
+         <section class="calendar section" id="calendar">
+          <div class="calendar-container container">
+            <h2 class="domain__title">
+              Upcoming Events
+          </h2>
+              <div class="upcoming-events">
+                  <div class="event">
+                      <img src="event1.png" alt="DB DON">
+                      <h4 class="event-name">DB DON</h4>
+                      <p class="event-description">Scheduled:Sept 8<br>Registration:Sept 5
+                      </p>
+                  </div>
+                  <div class="event">
+                      <img src="event2.png" alt="OOPS THE CONQUERER">
+                      <h4 class="event-name">OOPS THE CONQUERER</h4>
+                      <p class="event-description">Scheduled:Sept 10<br>Registration:Sept 7</p>
+                  </div>
+                  <div class="event">
+                      <img src="event3.png" alt="TECH TALK">
+                      <h4 class="event-name">TECH TALK</h4>
+                      <p class="event-description">Scheduled:Sept 15<br>Registration:Sept 12</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+    </main>
+
+    <footer class = "footer">
+
+
+      <h2 class="domain__title">
+        Contact Details
+    </h2>
+
+     
+    <p>Contact Number: <span id="contactNumber">9876543210</span></p>
+
+    <h2>Organizers</h2>
+    <ul id="organizersList"></ul>
+    </footer>
+
+    <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <script>
+      const jsonUrl = "https://web-it-like-spider.onrender.com/hackathon/home/";
+
+fetch(jsonUrl)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.json();
+  })
+  .then((data) => {
+    // Once you have the JSON data, you can manipulate the DOM to display it
+    displayEventData(data); // You'll define this function
+  })
+  .catch((error) => {
+    console.error("There was a problem with the fetch operation:", error);
+  });
+function displayEventData(data) {
+  document.getElementById("eventName").textContent = data.name;
+  document.getElementById("eventStartDate").textContent = data.start_date;
+  document.getElementById("eventEndDate").textContent = data.end_date;
+  document.getElementById("registrationStartDate").textContent =
+    data.registration_start_date;
+  document.getElementById("registrationEndDate").textContent =
+    data.registration_end_date;
+  document.getElementById("contactNumber").textContent =
+    data.contact_number;
+
+  // Display Rounds
+  const roundsList = document.getElementById("roundsList");
+  roundsList.innerHTML = ""; // Clear previous content
+  data.rounds.forEach((round) => {
+    const roundItem = document.createElement("li");
+    roundItem.textContent = `Round ${round.round_number} Date: ${round.round_date}`;
+    roundsList.appendChild(roundItem);
+  });
+
+  // Display Announcements
+  const announcementsList = document.getElementById("announcementsList");
+  announcementsList.innerHTML = ""; // Clear previous content
+  data.announcements.forEach((announcement) => {
+    const announcementItem = document.createElement("li");
+    announcementItem.textContent = announcement.announcement_text;
+    announcementsList.appendChild(announcementItem);
+  });
+
+  // Display Organizers
+  const organizersList = document.getElementById("organizersList");
+  organizersList.innerHTML = ""; // Clear previous content
+  data.organizers.forEach((organizer) => {
+    const organizerItem = document.createElement("li");
+    organizerItem.textContent = organizer.organizer_info;
+    organizersList.appendChild(organizerItem);
+  });
+}
+    </script>
+</body>
+</html>
